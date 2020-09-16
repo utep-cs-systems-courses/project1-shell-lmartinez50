@@ -5,12 +5,13 @@
 # Author Lorenzo Martinez
 # Version 1.0
 # Creation Date: 09/06/2020
-# Due date: 09/09/2020
+# Due date: 09/15/2020
 # Lab 1
 # CS 4375 Theory of Operating Systems
 # Instructor PhD Eric Freudenthal
 # Rev. 1 09/05/2020 Initial approach
-# Rev. 2 09/06/2020
+# Rev. 2 09/06/2020 Adding fork, redirectIn, and redirectOut methods
+# Rev. 3 09/15/2020 Adding comments
 
 import re       # regular expression tools
 import sys      # command line arguments
