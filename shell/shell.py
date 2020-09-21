@@ -27,7 +27,7 @@ def fork(args):
     # handle background tasks
     if "&" in args:
         args.remove("&")
-        wait = False
+        stby = False
 
     if rc < 0:  # capture error during fork
         os.write(2, ("Fork failed, returning %d\n" % rc).encode())
@@ -59,7 +59,7 @@ def redirection(args):
     # 1 output >
     if ">" in args:
         fileIndex = args.index('>') + 1  # Check for index of output
-        fileName = args[fileIndex]  #
+        fileName = args[fileIndex]       # Command name
         os.close(1)
         os.open(fileName, os.O_CREAT | os.O_WRONLY)
         os.set_inheritable(1, True)
